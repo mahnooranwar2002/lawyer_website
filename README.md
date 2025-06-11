@@ -1,5 +1,5 @@
 
-Here is the clean, well-structured, and clearly written description of your lawyer website roles and functionalities with proper formatting and grammar:
+**Project Name: flexor Lawyers Management System**
 
 ADMIN
 - The admin can add new lawyers.
