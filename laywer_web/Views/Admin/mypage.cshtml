@@ -1,0 +1,65 @@
+﻿@model laywer_web.Models.lawyerViewModel
+@{
+    Layout = "../shared/_layout2.cshtml";
+}
+
+
+
+<main >
+    <div class="card">
+        <div class="card-body" style="height:80vh;">
+            <h5 class="card-title">DASHBOARD</h5>
+
+            <div style="display:flex; justify-content:center; justify-items:center; flex-wrap:wrap">
+                <div class="card" style="width: 25em; margin:10px; height:150px">
+
+                    <div class="card-body" style="text-align:center">
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em"><i  class="bi bi-person-fill-gear px-3 py-5"></i> ADMIN</h4>
+                    
+                        <h5 class="card-text" style="text-align:center">@ViewBag.admin</h5>
+                </div>
+            </div>
+                <div class="card" style="width: 25em; margin:10px;">
+
+                    <div class="card-body" style="text-align:center">
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em"><i class=" bi bi-briefcase-fill px-3 py-5"></i>LAWYERS</h4>
+                        <h5 class="card-text" style="text-align:center">@ViewBag.lawyer</h5>
+                </div>
+            </div>
+                <div class="card" style="width: 25em; margin:10px;">
+
+                    <div class="card-body" style="text-align:center">
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em"><i class="bi bi-person-circle px-3 py-5"></i>USER</h4>
+                        <h5 class="card-text" style="text-align:center">@ViewBag.user</h5>
+                </div>
+                </div>
+
+                <div class="card" style="width: 25em; margin:10px;height:150px">
+
+                    <div class="card-body" style="text-align:center">
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em"><i class="bi bi-telephone px-3 py-5"></i>CONTACT</h4>
+                            <h5 class="card-text" style="text-align:center">@ViewBag.contact</h5>
+                        </div>
+                    </div>
+
+                <div class="card" style="width: 25em; margin:10px;height:150px">
+
+                    <div class="card-body" style="text-align:center">
+                        <h4 class="card-title" style="padding:20px;font-size:1.5em"><i class="bi bi-calendar-check-fill px-3 py-5"></i>Appointments</h4>
+                        <h5 class="card-text" style="text-align:center">@ViewBag.appoitment</h5>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <div/>
+
+
+
+  
+</main>
+<style>
+    .card-title{
+        color: #ff5821;
+    }
+</style>

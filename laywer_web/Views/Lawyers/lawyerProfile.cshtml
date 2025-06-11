@@ -1,0 +1,37 @@
+﻿@model laywer_web.Models.lawyerViewModel
+
+
+@{
+    Layout = "../shared/lawyer_dashboard.cshtml";
+}
+<main>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Lawyer Profile</h5>
+
+
+            <div class="card" style="width: 80%;">
+
+                <div class="card-body" style="padding:20px;">
+                    @foreach (var lawyerdata in Model.lawyersdetails)
+                    {
+
+
+                        <h5>lawyer Name:@lawyerdata.lawyer_name</h5>
+                        <h5>lawyer Email:@lawyerdata.lawyer_email</h5>
+                        <h5>lawyer password:@lawyerdata.lawyer_Number</h5>
+                        <h5>lawyer services : @lawyerdata.lawyer_dealed</h5>
+                        <h5>Lawyer Discription</h5>
+                          <p>@lawyerdata.lawyer_dis</p>
+
+                          <button class="btn btn-primary"> <a style="color:white">Edit  Profile</a></button>
+                                           }
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+
+
