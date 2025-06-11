@@ -19,4 +19,3 @@ LAWYER
 - Lawyers can update the status of bookings.
 - Lawyers can update their own profiles.
 
-If you want, I can help you develop this into a full specification document or assist with building the application.
